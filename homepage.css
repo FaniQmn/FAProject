@@ -1,61 +1,115 @@
-#en {
-    border: 1px solid rgba(255,255,255,0.2);
-    padding: 0;
-    margin-top: 7px;
-}
-.container {
-    display: flex;
-    margin-top: 35px;
+@font-face 
+{font-family: 'Nunito-Regular';
+src: url('Nunito-Regular.eot') format('eot'),
+     url('Nunito-Regular.woff') format('woff'),
+     url('Nunito-Regular.ttf') format('truetype'),
+     url('Nunito-Regular.svg') format('svg');
 }
 
-.image {
-    background-image: url("batman.jpeg");
-    background-position: top;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 350px;
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 60px;
+@font-face 
+{font-family: 'Nunito-Extrabold';
+src: url('Nunito-Extrabold.eot') format('eot'),
+     url('Nunito-Extrabold.woff') format('woff'),
+     url('Nunito-Extrabold.ttf') format('truetype'),
+     url('Nunito-Extrabold.svg') format('svg');
 }
 
-h1,h2 {
-    color: white;
-    padding-left: 30px;
+div.menu {
+  background-color: #333;
+  display: flex;
+  font-family: nunito-extrabold;
+  font-size: 18px;
+  justify-content: space-between;
+}
+  
+div.menu a {
+  display: inline-block;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+  
+div.menu a:hover {
+  background-color: #777;
 }
 
-.navbar-nav > li {
-    padding-left: 10px;
-    padding-right: 10px; 
+.left {
+  padding-left: 35px;   
 }
 
-.second {
-    display: flex;
+.right {
+  padding-right: 65px;
 }
 
-.un {
-    margin-left: 5px;
-    margin-top: 36px;
+i,svg {
+  color: white;
 }
 
-.lol {
-    font-size: 30px;
+div.header {
+  background-image: url("batman.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  height: 400px;  
+  font-family: nunito-extrabold;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 170px;
+  text-align: center;
+  width: 90%;
 }
 
-.menu {
-    border: 2px solid;
-    border-radius: 35px;
-    margin-left: 35px;
-    margin-top: 40px;
-    padding: 4px 8px 4px 8px; 
+div.search {
+  display: flex;  
+  padding-top: 15px;  
 }
 
-img {
-    width: 150px;
+button {
+  background-color: #333;
+  color: white;
 }
 
-h3
-{
-    font-size: 14px;
+div.header h2 {
+  font-size: 40px;
 }
+
+div.header h3 {
+  font-size: 26px;
+}
+
+div.popular {
+display: flex;
+font-family: nunito-extrabold;
+padding-left: 60px;
+padding-top: 30px;
+}
+
+div.popular h2 {
+  font-size: 26px;
+}
+
+div.popular h3 {
+  font-size: 18px;
+  padding-left: 50px;
+  padding-top: 8px;
+}
+
+#movies {
+  padding-top: 30px;
+}
+
+h3 {
+  font-family: nunito-extrabold;
+  font-size: 18px;
+  text-align: center;
+}
+
+p {
+  font-family: nunito-regular;
+  font-size: 12px;
+  text-align: center;
+}
+

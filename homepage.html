@@ -2,102 +2,77 @@
 <html>
 
 <head>
-    <meta charset "utf-8" />
 
-    <!-- lien bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset "utf-8" />
+
+  <!-- lien bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <!-- lien bootstrap-->
+  <!-- lien bootstrap-->
 
-    <!-- lien fontawesome-->
-    <script src="https://kit.fontawesome.com/6002d8f0af.js" crossorigin="anonymous"></script>
-    <!-- lien fontawesome-->
+  <!-- lien fontawesome-->
+  <script src="https://kit.fontawesome.com/6002d8f0af.js" crossorigin="anonymous"></script>
+  <!-- lien fontawesome-->
 
-    <!-- lien CSS -->
-    <link rel="stylesheet" href="homepage.css" />
-    <!-- lien CSS -->
+  <!-- lien CSS -->
+  <link rel="stylesheet" href="homepage.css" />
+  <!-- lien CSS -->
 
-    <title>Homepage</title>
+  <title>Homepage</title>
+
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">FAP</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Movies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">TV Shows</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            People
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-plus"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" id="en">EN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Login
-                        </a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Join FAP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-search" viewBox="0 0 16 16">
-                                <path
-                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                        </a>
-            </div>
-        </div>
-    </nav>
 
-    <div class="image">
-        <h1 class="text">Welcome.</h1>
-        <h2 class="textBis">Millions of movies, TV Shows and people to discover. To explore now.</h2>
-        <div class="container">
-            <input class="form-control" />
-            <button class="btn btn-success">Search</button>
-        </div>
+<div class="menu">
+  <div class="left">
+    <a href="#fap">FAP</a>
+    <a href="#movies">Films</a>
+    <a href="#tvshows">Emissions télé</a>
+    <a href="#people">Acteurs</a>
+    <a href="#more">Plus</a>
+  </div>
+  <div class="right">
+    <i class="fas fa-plus"></i>
+    &ensp;
+    <a href="#en">EN</a>
+    <a href="#login">Connexion</a>
+    <a href="#join">Contacter FAP</a>
+    &ensp;
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+         class="bi bi-search" viewBox="0 0 16 16">
+         <path
+         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+    </svg>
     </div>
+</div>
 
-    <div class="second">
-        <div class="un">
-            <h3 class="lol">What's popular</h3>
-        </div> 
-        <div class="deux"></div>
-            <p class="menu">Streaming&emsp;&ensp;On TV&emsp;&ensp;For rent&emsp;&ensp;In Theatres</p>
-        </div>
-    </div>
+<div class="header">
+  <h2>Bienvenue!</h2>
+  <h3>Des millions de films, d'émissions de télévision et de personnes à découvrir.</br>
+      A explorer maintenant!</h3>
+  <div class="search">
+    <input class="form-control"
+           type="text" 
+           value="Rechercher un acteur, une émission, un film, une série..."></input>
+    <button>Rechercher</button>
+  </div>
+</div>
 
-   
-    <div id="movies" class="row flex-nowrap overflow-auto" ></div>
-   
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="homepage.js"></script>
+<div class="popular">
+  <div class="left">
+    <h2>Ce qui est populaire</h2>
+  </div>
+  <div class="right">
+    <h3>Diffusion&emsp;A la télé&emsp;A louer&emsp;Dans les théâtres</h3>
+  </div>
+</div>
+
+<div id="movies" class="row flex-nowrap overflow-auto"></div>
+
+  <!-- lien javascript-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="homepage.js"></script>
+  <!-- lien javascript-->
 
 </body>
-
 </html>
