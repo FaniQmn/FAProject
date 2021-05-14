@@ -14,7 +14,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     height: 350px;
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 60px;
@@ -30,3 +30,32 @@ h1,h2 {
     padding-right: 10px; 
 }
 
+.second {
+    display: flex;
+}
+
+.un {
+    margin-left: 5px;
+    margin-top: 36px;
+}
+
+.lol {
+    font-size: 30px;
+}
+
+.menu {
+    border: 2px solid;
+    border-radius: 35px;
+    margin-left: 35px;
+    margin-top: 40px;
+    padding: 4px 8px 4px 8px; 
+}
+
+img {
+    width: 150px;
+}
+
+h3
+{
+    font-size: 14px;
+}
