@@ -101,15 +101,30 @@ div.popular h3 {
   padding-top: 30px;
 }
 
-h3 {
+a {
+  color:#333;
   font-family: nunito-extrabold;
   font-size: 18px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;    
+}
+
+h3 {
   text-align: center;
+  white-space: pre-wrap;
 }
 
 p {
   font-family: nunito-regular;
   font-size: 12px;
   text-align: center;
+}
+
+img {
+  height: 300px;
+  width: 200px;   
 }
 
