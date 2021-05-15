@@ -67,13 +67,20 @@ div.header {
 }
 
 #search {
-  display: flex;  
-  padding-top: 15px;  
+  display: flex; 
+  padding-top: 15px;
 }
 
 button {
   background-color: #333;
+  border-radius: 30px;
   color: orangered;
+  padding: 15px;
+}
+
+input.form-control {
+  border-radius: 30px;
+  padding: 10px 0px 10px 15px;
 }
 
 div.header h2 {
