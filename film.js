@@ -10,14 +10,22 @@ const URL_IMAGE_PREFIX = "https://image.tmdb.org/t/p/w200"
   $.ajax({
     url: urlWithQuery,
     success: function (movie) {
-        console.log(movie)
     
     $("#image").append()
     $("#title").append(movie.original_title)
     $("#date").append(movie.release_date)
     $("#synopsys").append(movie.overview)
     $("#director").append(movie.productions_compagnies_name)
-    }
-})
+    }    
+ })
 
-    }) 
+   $.ajax({
+     url: urlWithQuery,
+     success: function (movie) {
+    
+     $("#status").append(movie.status)
+     $("#language").append(movie.original_language)
+
+    }
+ })
+}) 
