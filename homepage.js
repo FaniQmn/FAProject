@@ -5,9 +5,8 @@ const URL_IMAGE_PREFIX = "https://image.tmdb.org/t/p/w200";
 
 $(function() {
   
-$(document).ready(function () {
+$(document).ready(function () { 
     let urlWithQuery = `https://api.themoviedb.org/3/movie/popular?api_key=${URL_API_KEY}&language=en-US&page=1`
-
 
   $.ajax({
     url: urlWithQuery,
@@ -17,11 +16,11 @@ $(document).ready(function () {
       movies.forEach(function(movie) {
         let movieHtmlToAdd = `<div class="col-2">`;
         movieHtmlToAdd     += `<div>`;
-        movieHtmlToAdd     += `<h3> <a href="./film.html?filmId=${movie.id}">${movie.title}</a> </h3>`;
         movieHtmlToAdd     += "<p><strong>Date de sortie</strong> : "+ movie.release_date +"</p>";
         movieHtmlToAdd     += '</div>';
         movieHtmlToAdd     += '<div>';
         movieHtmlToAdd     += `<img src="${URL_IMAGE_PREFIX + movie.poster_path}">`;
+        movieHtmlToAdd     += `<h3> <a href="./film.html?filmId=${movie.id}">${movie.title}</a> </h3>`;
         movieHtmlToAdd     += '</div>';
         movieHtmlToAdd     += '</div>';
         $("#movies").append(movieHtmlToAdd);
@@ -30,3 +29,4 @@ $(document).ready(function () {
   });
 })
 })
+

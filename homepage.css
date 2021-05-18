@@ -109,7 +109,10 @@ padding-top: 30px;
 }
 
 #movies {
+  height: 100%;
   padding-top: 30px;
+  overflow: hidden;
+  width: 100%;
 }
 
 a {
