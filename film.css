@@ -60,6 +60,7 @@ div.menu i {
   display: flex;
   font-family: nunito-extrabold;
   justify-content: space-between;
+  padding-top: 30px;
 }
 
 #top i {
