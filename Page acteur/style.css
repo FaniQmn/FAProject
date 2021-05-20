@@ -1,3 +1,5 @@
+
+
 .menu  {
   background-color: #333;
   height: 70px;
@@ -8,59 +10,33 @@
 
 }
 .menu a {
-  font-size: 24px;
-}
- 
-
-
-div.menu a {
   display: inline-block;
   color: white;
   padding: 14px;
-  
+  font-size: 24px;
   text-decoration: none;
-}
-  
-div.menu a:hover {
+}  
+.menu a:hover {
   color: orangered;
 }
-
 .left {
   padding-left: 35px;   
 }
-
-
 .right {
   padding-right: 65px;
 }
-
 i {
   color: white;
 }
-
-
-a:hover {
-  color: orangered;    
-}
- 
-
-p {
-  font-family: nunito-regular;
-  font-size: 12px;
-  text-align: center;
-  
-}
-.menu-secons {
+.menu-second {
   background-color:white;
   font-family:nunito-regular;
   color:black;
   font-size: 18px; 
   padding-left: 250px;
   border: 0.5px solid; 
-
 }
-
-.menu-secons a {
+.menu-second a {
   display: inline-block;
   color: black;
   font-size: 18px;
@@ -68,65 +44,69 @@ p {
   margin-left: 20px; 
   text-decoration: none;
 }
-.img-text #Robert {
-  margin-top: 20px;
-  margin-left: 50px;
-  border-radius: 15px;
-  
-}
 .menu h3 {
   display: inline;
   color: orangered;
   font-size: 26px;
   margin-left: 25px;
 }
-.img-text{
-  display: flex;  
+a:hover {
+  color: orangered;    
 }
-
-.text > h3  {
+.info-personel-movies p {
+  font-family: nunito-regular;
+  text-align: justify;
+  margin-left: 45px;
+  margin-right: 60px; 
+  margin-top: auto;
+  font-size: 18px;
+  font-weight: bold;  
+}
+ #Robert {
+  margin-top: 20px;
+  margin-left: 50px;
+  border-radius: 15px;
+ }
+.content > h3  {
   margin: 35px;
   font-weight: bold;
   font-size: 35px;
 }
-
-
 h4 {
   margin-top: 25px; 
   margin: 35px;
-  margin-bottom: 20px;
-  
+  margin-bottom: 20px; 
 }
-
 .icons{
   margin-left: 110px;
   padding: 10px;
   font-size: 20px;
-  text-decoration: none;
- 
-  
+  text-decoration: none;  
 }
 .icons a{ 
   color: black;
 }
 .info-persone-movies{
-  display:flex;
-  
+  display:flex; 
 }
-#movies{
+#credits{
   display:flex;
-  margin-left: 390px;
-  
-  
+  margin-left: 50px;
+  margin-right: 300px;   
 }
-p {
-  text-align: justify;
+.content p {
+  display:flex;
   margin-left: 35px;
-  margin-right: 60px; 
   font-size: 18px;
-  font-weight: bold;
+  font-weight: bold;  
 }
-img {
-  width: 50%;
-  height: 50%;
+.aside-content{
+  display: flex;
+  width: 20%;
+  height: 80%;
 }
+.content{
+  width: 20%;
+  height: 30%; 
+}
+
