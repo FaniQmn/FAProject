@@ -14,7 +14,7 @@ $(function () {
                 const credits= data.cast
                 console.log(credits)
                 credits.forEach(function(credit){
-                    let mystring=`<img src="${URL_IMAGE_PREFIX+credit.poster_path}">`
+                    let mystring=`<img class="movie-box" src="${URL_IMAGE_PREFIX+credit.poster_path}">`
                   $("#credits").append(mystring)  
 
                 })
