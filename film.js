@@ -4,39 +4,44 @@ const URL_IMAGE_PREFIX = "https://image.tmdb.org/t/p/w200"
 
 
     $(document).ready(function () { 
+
         const movie_id = "804435"
         let urlWithQuery = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=${URL_API_KEY}`
         let urlWithQueryBis = `https://api.themoviedb.org/3/movie/${movie_id}/credits?api_key=${URL_API_KEY}`
-  $.ajax({
+  
+    $.ajax({
     url: urlWithQuery,
     success: function (movie) {
-        console.log(movie)
+        
+        let img =`<img src="${URL_IMAGE_PREFIX+movie.backdrop_path}">`
     
-    $("#image").append()
+    
+    $("#image").append(img)
     $("#title").append(movie.original_title)
     $("#date").append(movie.release_date)
-    $("#synopsys").append(movie.overview)*
+    $("#synopsys").append(movie.overview)
     $("#status").append(movie.status)
     $("#language").append(movie.original_language)
+
     }    
  })
 
    $.ajax({
-     url: urlWithQueryBis,
-     success: function (credits) {
-        credits.cast.forEach(function(person) {
-            $("#director").append(person.name)
-        })
+   url: urlWithQueryBis,
+   success: function (credits) {
 
-        credits.cast.forEach(function(member) 
-        {   let imgBis = `<img src="${URL_IMAGE_PREFIX+member.profile_path}">`
-            $("#cast").append(imgBis)
-        })
+       credits.cast.forEach(function(person) {
 
+    $("#director").append(person.name)
     
-        
+  })
 
+       credits.cast.forEach(function(member) {   
+           
+       let imgBis = `<img class="col-2" src="${URL_IMAGE_PREFIX+member.profile_path}">`
+    $("#cast").append(imgBis)
 
-    }
- })
+  })
+  }
+  })
 }) 

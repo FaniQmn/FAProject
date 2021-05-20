@@ -53,13 +53,22 @@ div.menu i {
 }
 
 #movies {
+  display: flex;
   font-family: nunito-extrabold;
+}
+
+#image {
+  height: 100%;
+  width: 100%;
+}
+
+.right {
+  margin-left: 30px;
 }
 
 #top {
   display: flex;
   font-family: nunito-extrabold;
-  justify-content: space-between;
   padding-top: 30px;
 }
 
@@ -67,3 +76,10 @@ div.menu i {
   color: black;
 }
 
+#cast {
+width: 80%;
+}
+
+.social {
+  width: 20%;
+}
